@@ -59,7 +59,7 @@ export const RepoItem = ({ repo }: RepoItemProps) => {
             </Link>
           }
           secondary={
-            <Grid2>
+            <Grid2 container gap={1} flexDirection="column">
               <Typography
                 variant="body2"
                 color="text.secondary"
@@ -68,7 +68,12 @@ export const RepoItem = ({ repo }: RepoItemProps) => {
               >
                 {description}
               </Typography>
-              <Grid2 container gap={1} justifyContent="flex-end">
+              <Grid2
+                container
+                gap={1}
+                justifyContent="flex-end"
+                alignSelf="flex-end"
+              >
                 <StarIcon width={20} height={20} />
                 <Typography
                   variant="body1"
